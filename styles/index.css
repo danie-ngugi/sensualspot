@@ -1,0 +1,188 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-7000 {
+    animation-delay: 3s;
+  }
+}
+
+
+/* Your own custom utilities */
+:root {
+  --primary-color: #420000;
+  --secondary-color: #d35400;
+  --accent-color: #009432;
+  --whatsapp-color: #128C7E;
+  --clr: #222327 ;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+.accent-text {
+  color: var(--accent-color);
+}
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+.bg-primary {
+  background: var(--primary-color);
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+}
+
+.bg-accent {
+  background: var(--accent-color);
+}
+
+html
+{
+  -webkit-tap-highlight-color:transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* a:hover {
+  color: var(--primary-color);
+} */
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply bg-primary-1 text-gray-50 font-bold py-2 px-4 rounded;
+}
+
+.primary-btn {
+  @apply bg-primary-1 font-normal text-gray-50  py-3 px-5 rounded-lg;
+}
+
+
+.simple-input {
+  @apply focus:ring-primary-1
+  focus:border-primary-1
+  w-full
+  rounded-md
+  sm:text-sm
+  border-gray-400
+  mt-1
+  shadow-sm;
+}
+
+.simpler-input {
+  @apply focus:ring-primary-1
+  focus:border-primary-1
+  rounded-md
+  sm:text-sm
+  border-gray-300
+
+  mt-1
+  shadow-sm;
+}
+
+footer a {
+  @apply text-gray-800  ;
+}
+
+.flat-btn {
+  @apply py-2 px-4 rounded-lg;
+}
+
+input {
+  transition: all ease 0.2s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+a {
+  transition: all ease 0.2s;
+}
+
+#nprogress .bar {
+  background: var(--primary-color) !important;
+  height: 4px;
+}
+
+.clamp-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.clamp-1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.react-toast-notifications__toast, .ToastElement {
+  width: 270px !important;
+}
+.slanted-right:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  margin: -20px;
+  width:4rem;
+  height:4rem;
+  transform:rotate(45deg);
+  background-color:transparent;
+  border-top: 2px solid #EEEEEE;
+  border-right: 2px solid #EEEEEE;
+}
+
+/* tailwind media query <lg */
+@media (max-width: 1023px) {
+  .slanted-right:after {
+    margin: 0;
+  }
+}
+
+.z30 {
+  z-index: -300;
+}
+
+/* show animation */
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+}
+
+.wrapper.is-open {
+  grid-template-rows: 1fr;
+  min-height: 20px;
+}
+
+/* .custom-ac > input:checked +  .wrapper  {
+  grid-template-rows: 1fr;
+} */
+
+.inner {
+  overflow: hidden;
+}
+
+/* show animation */
