@@ -5,8 +5,8 @@ export const domain = "sensualspot.co.ke"
 
 export const business = {
   name: 'Sensual Spot',
-  phone: '+254702412512',
-  whatsAppPhone: '254702412512',
+  phone: '+254790725565',
+  whatsAppPhone: '254790725565',
   email: `info@${domain}`,
   gmail: 'sensual.gspot@gmail.com',
   salesEmail: `ales@${domain}`,
