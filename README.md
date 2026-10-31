@@ -1,6 +1,6 @@
 # Tailwind CSS example
 
-This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project
+This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
 
 ## Deploy your own
 
